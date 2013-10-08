@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ReSharper.StringFormat</id>
+    <version>0.1.0</version>
+    <title>ReSharper.StringFormat</title>
+    <authors>Alexander Zaytsev</authors>
+    <owners>Hazzik</owners>
+    <licenseUrl>https://github.com/hazzik/ReSharper.StringFormat/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/hazzik/ReSharper.StringFormat/</projectUrl>
+    <!--<iconUrl></iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Convert PHP-like strings to string.Format form</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2013 Alexander Zaytsev</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Resharper" version="8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$Configuration$\ReSharper.StringFormat.dll" target="ReSharper\v8.0\plugins\" />
+    <file src="bin\$Configuration$\ReSharper.StringFormat.pdb" target="ReSharper\v8.0\plugins\" />
+  </files>
+</package>
