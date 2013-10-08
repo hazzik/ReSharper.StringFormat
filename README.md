@@ -25,3 +25,7 @@ class Program
   }
 } 
 ```
+
+###Installation
+
+Available in [ReSharper Gallery](http://resharper-plugins.jetbrains.com/packages/ReSharper.StringFormat/)
