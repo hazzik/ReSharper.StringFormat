@@ -28,6 +28,7 @@ namespace ReSharper.StringFormat.Tests
 
         [TestCase("execute01.cs")]
         [TestCase("execute02.cs")]
+        [TestCase("execute03.cs")]
         public void ExecuteTest(string file)
         {
             DoTestFiles(file);

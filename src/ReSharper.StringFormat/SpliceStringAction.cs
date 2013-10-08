@@ -8,7 +8,9 @@ using JetBrains.ReSharper.Feature.Services.CSharp.Bulbs;
 using JetBrains.ReSharper.Feature.Services.LinqTools;
 using JetBrains.ReSharper.Intentions.Extensibility;
 using JetBrains.ReSharper.Psi.CSharp;
+using JetBrains.ReSharper.Psi.ExtensionsAPI.Tree;
 using JetBrains.ReSharper.Psi.Tree;
+using JetBrains.ReSharper.Psi.Util;
 using JetBrains.TextControl;
 using JetBrains.Util;
 
@@ -59,7 +61,7 @@ namespace ReSharper.StringFormat
                                 str = str.Replace("{" + argument + "}", "{" + i + "}");
                             }
 
-                            _replacement = "string.Format(\"" + str + "\", " + string.Join(", ", arguments) + ")";
+                            _replacement = "string.Format(\"" + StringLiteralConverter.EscapeToRegular(str) + "\", " + string.Join(", ", arguments) + ")";
                             _target = literal;
                             return true;
                         }

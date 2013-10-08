@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpliceStringExecuteTests.cs" />
+    <None Include="test\data\SpliceStringAction\execute03.cs" />
+    <None Include="test\data\SpliceStringAction\execute03.cs.gold" />
     <None Include="test\data\SpliceStringAction\execute02.cs" />
     <None Include="test\data\SpliceStringAction\execute02.cs.gold" />
     <None Include="test\data\SpliceStringAction\execute01.cs" />
