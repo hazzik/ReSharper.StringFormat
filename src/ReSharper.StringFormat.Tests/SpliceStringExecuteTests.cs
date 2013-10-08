@@ -1,7 +1,6 @@
 using JetBrains.ReSharper.Feature.Services.CSharp.Bulbs;
 using JetBrains.ReSharper.Intentions.CSharp.Test;
 using JetBrains.ReSharper.Intentions.Extensibility;
-using JetBrains.ReSharper.TestFramework;
 using NUnit.Framework;
 
 namespace ReSharper.StringFormat.Tests
@@ -9,8 +8,6 @@ namespace ReSharper.StringFormat.Tests
     [TestFixture]
     public class SpliceStringExecuteTests : CSharpContextActionExecuteTestBase
     {
-        private CaretPositionsProcessor myCaretPositionsProcessor;
-
         protected override string ExtraPath
         {
             get { return "SpliceStringAction"; }
@@ -29,6 +26,7 @@ namespace ReSharper.StringFormat.Tests
         [TestCase("execute01.cs")]
         [TestCase("execute02.cs")]
         [TestCase("execute03.cs")]
+        [TestCase("execute04.cs")]
         public void ExecuteTest(string file)
         {
             DoTestFiles(file);

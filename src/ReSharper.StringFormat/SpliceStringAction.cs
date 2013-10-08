@@ -8,9 +8,7 @@ using JetBrains.ReSharper.Feature.Services.CSharp.Bulbs;
 using JetBrains.ReSharper.Feature.Services.LinqTools;
 using JetBrains.ReSharper.Intentions.Extensibility;
 using JetBrains.ReSharper.Psi.CSharp;
-using JetBrains.ReSharper.Psi.ExtensionsAPI.Tree;
 using JetBrains.ReSharper.Psi.Tree;
-using JetBrains.ReSharper.Psi.Util;
 using JetBrains.TextControl;
 using JetBrains.Util;
 
@@ -38,9 +36,9 @@ namespace ReSharper.StringFormat
         public override bool IsAvailable(IUserDataHolder cache)
         {
             var literal = _provider.GetSelectedElement<ILiteralExpression>(true, true);
-            if (literal != null && literal.IsConstantValue() && literal.ConstantValue.IsString())
+            if (literal != null && literal.IsValid() && literal.IsConstantValue() && literal.ConstantValue.IsString())
             {
-                var str = literal.ConstantValue.Value as string;
+                var str = literal.GetText();
                 if (!string.IsNullOrEmpty(str))
                 {
                     var matches = regex.Matches(str);
@@ -61,7 +59,8 @@ namespace ReSharper.StringFormat
                                 str = str.Replace("{" + argument + "}", "{" + i + "}");
                             }
 
-                            _replacement = "string.Format(\"" + StringLiteralConverter.EscapeToRegular(str) + "\", " + string.Join(", ", arguments) + ")";
+                            _replacement = "string.Format(" + str + ", " + string.Join(", ", arguments) + ")";
+
                             _target = literal;
                             return true;
                         }

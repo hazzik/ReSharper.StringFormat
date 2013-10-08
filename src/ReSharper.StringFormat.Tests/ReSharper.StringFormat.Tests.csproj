@@ -51,6 +51,8 @@
     <None Include="test\data\SpliceStringAction\execute02.cs" />
     <None Include="test\data\SpliceStringAction\execute02.cs.gold" />
     <None Include="test\data\SpliceStringAction\execute01.cs" />
+    <None Include="test\data\SpliceStringAction\execute04.cs" />
+    <None Include="test\data\SpliceStringAction\execute04.cs.gold" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReSharper.StringFormat\ReSharper.StringFormat.csproj">
