@@ -17,11 +17,11 @@ namespace ReSharper.StringFormat
     [ContextAction(Name = "SpliceString", Description = "Splices a string", Group = "C#")]
     public class SpliceStringAction : ContextActionBase
     {
-        private static readonly Regex regex = new Regex(@"\{([\w]+)\}", RegexOptions.Compiled);
+        private static readonly Regex regex = new Regex(@"\{([^{:}]+)(:[^}]+)?\}", RegexOptions.Compiled);
 
         private readonly ICSharpContextActionDataProvider _provider;
-        private ILiteralExpression _target;
         private string _replacement;
+        private ILiteralExpression _target;
 
         public SpliceStringAction(ICSharpContextActionDataProvider provider)
         {
@@ -46,20 +46,16 @@ namespace ReSharper.StringFormat
                     {
                         var arguments = matches
                             .Cast<Match>()
-                            .Select(m => m.Groups[1].Value)
-                            .Where(s => !IsNumber(s))
-                            .Distinct()
-                            .ToArray();
+                            .GroupBy(m => m.Groups[1].Value, m => m.Groups[2].Value)
+                            .Where(x => !IsNumber(x.Key))
+                            .Select((x, i) => new Argument(i, x.Key, x.ToArray()))
+                            .ToList();
 
-                        if (arguments.Length > 0)
+                        if (arguments.Count > 0)
                         {
-                            for (int i = 0; i < arguments.Length; i++)
-                            {
-                                var argument = arguments[i];
-                                str = str.Replace("{" + argument + "}", "{" + i + "}");
-                            }
-
-                            _replacement = "string.Format(" + str + ", " + string.Join(", ", arguments) + ")";
+                            _replacement = string.Format("string.Format({0}, {1})",
+                                arguments.Aggregate(str, (current, argument) => argument.Replace(current)),
+                                string.Join(", ", arguments));
 
                             _target = literal;
                             return true;
@@ -82,6 +78,30 @@ namespace ReSharper.StringFormat
             var newExpr = factory.CreateExpressionAsIs(_replacement);
             _target.ReplaceBy(newExpr);
             return null;
+        }
+
+        private class Argument
+        {
+            private readonly string[] _formats;
+            private readonly int _index;
+            private readonly string _name;
+
+            public Argument(int index, string name, string[] formats)
+            {
+                _index = index;
+                _name = name;
+                _formats = formats;
+            }
+
+            public string Replace(string value)
+            {
+                return _formats.Aggregate(value, (current, format) => current.Replace("{" + _name + format + "}", "{" + _index + format + "}"));
+            }
+
+            public override string ToString()
+            {
+                return _name;
+            }
         }
     }
 }

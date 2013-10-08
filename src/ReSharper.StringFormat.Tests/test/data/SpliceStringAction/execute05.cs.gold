@@ -1,0 +1,11 @@
+﻿namespace N
+{
+  class C
+  {
+    static void Main(string[] args)
+    {
+      var a = 1;
+      string s = string.Format(@"a is {{caret}0:N} and {0:D}", a);
+    }
+  }
+}
