@@ -1,6 +1,6 @@
 ###ReSharper.StringFormat
 
-This is a pluging for [ReSharper](http://jetbrains.com/resharper) which provides context action to replace PHP-like strings with embedded variables to `string.Format` method call with these variables as arguments.
+This is a plugin for [ReSharper](http://jetbrains.com/resharper) which provides context action to replace PHP-like strings with embedded variables to `string.Format` method call with these variables as arguments.
 
 ###Example
 
