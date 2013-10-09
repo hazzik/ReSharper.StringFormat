@@ -5,7 +5,7 @@ namespace N
     static void Main(string[] args)
     {
       var a = 1;
-      string s = @"a is {{caret}a:N} and {{c2}a:D}";
+      string s = @"a is {{caret}a:N} and {a:D}";
     }
   }
 }
