@@ -24,7 +24,7 @@
     <DefineConstants>JET_MODE_ASSERT;DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AssemblyName>ReSharper.StringFormat.Dev</AssemblyName>
+    <!-- <AssemblyName>ReSharper.StringFormat.Dev</AssemblyName> -->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>

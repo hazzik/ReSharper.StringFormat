@@ -21,7 +21,6 @@ public class TestEnvironmentAssembly : ReSharperTestEnvironmentAssembly
     // Test assembly
     yield return Assembly.GetExecutingAssembly();
 
-    #warning you need specify a type from the assembly being tested
     yield return typeof(ReSharper.StringFormat.SpliceStringFix).Assembly;
   }
 
