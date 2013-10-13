@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ReSharper.StringFormat</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>ReSharper.StringFormat</title>
     <authors>Alexander Zaytsev</authors>
     <owners>Hazzik</owners>
