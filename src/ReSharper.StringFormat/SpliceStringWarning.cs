@@ -1,12 +1,15 @@
 using JetBrains.ReSharper.Daemon;
 using JetBrains.ReSharper.Psi.CSharp;
 using JetBrains.ReSharper.Psi.Tree;
+using ReSharper.StringFormat;
 
+[assembly: RegisterConfigurableSeverity(SpliceStringWarning.HIGHLIGHTING_ID, null, HighlightingGroupIds.CodeInfo, "Splice string is required", "Do you want to splice the string?", Severity.SUGGESTION, false)]
 namespace ReSharper.StringFormat
 {
-    [StaticSeverityHighlighting(Severity.WARNING, CSharpLanguage.Name)]
+    [ConfigurableSeverityHighlighting(HIGHLIGHTING_ID, CSharpLanguage.Name)]
     public class SpliceStringWarning : IHighlighting
     {
+        public const string HIGHLIGHTING_ID = "SpliceString";
         private readonly ILiteralExpression _element;
         private readonly string _replacement;
 
