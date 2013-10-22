@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.StringFormat", "src\ReSharper.StringFormat\ReSharper.StringFormat.csproj", "{F98834AD-AF8B-4B36-8067-6051B86BC524}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper.StringFormat.Tests.csproj", "{E88515F0-E185-4DFB-8ABD-B55150CCD03E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{577F42A8-DF7F-4A9A-8707-546B45942EAC}"
@@ -12,20 +10,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{577F42
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.StringFormat", "src\ReSharper.StringFormat\ReSharper.StringFormat.csproj", "{779E43B9-75E4-4565-A744-A43D1824BB3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F98834AD-AF8B-4B36-8067-6051B86BC524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F98834AD-AF8B-4B36-8067-6051B86BC524}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F98834AD-AF8B-4B36-8067-6051B86BC524}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F98834AD-AF8B-4B36-8067-6051B86BC524}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E88515F0-E185-4DFB-8ABD-B55150CCD03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E88515F0-E185-4DFB-8ABD-B55150CCD03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E88515F0-E185-4DFB-8ABD-B55150CCD03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E88515F0-E185-4DFB-8ABD-B55150CCD03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
