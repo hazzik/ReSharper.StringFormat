@@ -1,3 +1,5 @@
+using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using JetBrains.ReSharper.Daemon;
@@ -11,7 +13,7 @@ using JetBrains.Util.Special;
 
 namespace ReSharper.StringFormat
 {
-    [ElementProblemAnalyzer(new[] { typeof (ILiteralExpression) },
+    [ElementProblemAnalyzer(typeof (ILiteralExpression), 
         HighlightingTypes = new[] { typeof (SpliceStringWarning) })]
     public class StringFormatAnalyzer : ElementProblemAnalyzer<ILiteralExpression>
     {

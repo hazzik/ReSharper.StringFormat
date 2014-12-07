@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using JetBrains.DocumentModel;
 using JetBrains.ReSharper.Daemon;
 using JetBrains.ReSharper.Feature.Services.Daemon;

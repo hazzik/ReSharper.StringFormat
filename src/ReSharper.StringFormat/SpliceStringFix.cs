@@ -4,7 +4,6 @@ using JetBrains.ProjectModel;
 using JetBrains.ReSharper.Feature.Services.Bulbs;
 using JetBrains.ReSharper.Feature.Services.LinqTools;
 #if !RESHARPER9
-using JetBrains.Application.Progress;
 using JetBrains.ReSharper.Intentions.Extensibility;
 #else
 using JetBrains.ReSharper.Feature.Services.QuickFixes;

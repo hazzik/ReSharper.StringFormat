@@ -16,14 +16,12 @@ using JetBrains.Application.PluginSupport;
 [assembly: AssemblyTitle("ReSharper.StringFormat")]
 [assembly: AssemblyDescription("Generate string.Format from PHP-like string with embedded variables.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hazzik")]
+[assembly: AssemblyCompany("Alexander Zaytsev")]
 [assembly: AssemblyProduct("ReSharper.StringFormat")]
-[assembly: AssemblyCopyright("Copyright © Hazzik, 2013")]
+[assembly: AssemblyCopyright("Copyright © Alexander Zaytsev, 2013-2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("0.4.1.0")]
-[assembly: AssemblyFileVersion("0.4.1.0")]
-
-[assembly: ActionsXml("ReSharper.StringFormat.Actions.xml")]
+[assembly: AssemblyVersion("0.4.2.0")]
+[assembly: AssemblyFileVersion("0.4.2.0")]
 
