@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper.StringFormat.Tests.csproj", "{E88515F0-E185-4DFB-8ABD-B55150CCD03E}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper80.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper80.StringFormat.Tests.csproj", "{E88515F0-E185-4DFB-8ABD-B55150CCD03E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{577F42A8-DF7F-4A9A-8707-546B45942EAC}"
 	ProjectSection(SolutionItems) = preProject
@@ -10,7 +12,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{577F42
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.StringFormat", "src\ReSharper.StringFormat\ReSharper.StringFormat.csproj", "{779E43B9-75E4-4565-A744-A43D1824BB3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper80.StringFormat", "src\ReSharper.StringFormat\ReSharper80.StringFormat.csproj", "{779E43B9-75E4-4565-A744-A43D1824BB3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper80", "ReSharper80", "{813CBBAC-C1D7-4377-A153-DF457FB13680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper81", "ReSharper81", "{2CA86341-C51B-4F79-AA93-33C9B87942DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper82", "ReSharper82", "{14CDC976-FD3D-4DB7-BE5F-7C3707BB0A03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper90", "ReSharper90", "{0FEEFEF1-520A-4AE1-B513-146A93CAA34B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper81.StringFormat", "src\ReSharper.StringFormat\ReSharper81.StringFormat.csproj", "{6C4A8B4D-99BE-408B-94B7-91635634FD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper82.StringFormat", "src\ReSharper.StringFormat\ReSharper82.StringFormat.csproj", "{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper90.StringFormat", "src\ReSharper.StringFormat\ReSharper90.StringFormat.csproj", "{465AA27F-06D4-4E99-9420-4773373A7471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper81.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper81.StringFormat.Tests.csproj", "{63647324-F478-42ED-BA9A-2111B0561943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper82.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper82.StringFormat.Tests.csproj", "{B115B98C-2769-4C8B-AE9D-BC46B1600131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper90.StringFormat.Tests", "src\ReSharper.StringFormat.Tests\ReSharper90.StringFormat.Tests.csproj", "{7BD62B08-7955-4E57-9A82-4698C036EC2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,8 +48,42 @@ Global
 		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{779E43B9-75E4-4565-A744-A43D1824BB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4A8B4D-99BE-408B-94B7-91635634FD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4A8B4D-99BE-408B-94B7-91635634FD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4A8B4D-99BE-408B-94B7-91635634FD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4A8B4D-99BE-408B-94B7-91635634FD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465AA27F-06D4-4E99-9420-4773373A7471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465AA27F-06D4-4E99-9420-4773373A7471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465AA27F-06D4-4E99-9420-4773373A7471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465AA27F-06D4-4E99-9420-4773373A7471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63647324-F478-42ED-BA9A-2111B0561943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63647324-F478-42ED-BA9A-2111B0561943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63647324-F478-42ED-BA9A-2111B0561943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63647324-F478-42ED-BA9A-2111B0561943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B115B98C-2769-4C8B-AE9D-BC46B1600131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B115B98C-2769-4C8B-AE9D-BC46B1600131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B115B98C-2769-4C8B-AE9D-BC46B1600131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B115B98C-2769-4C8B-AE9D-BC46B1600131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD62B08-7955-4E57-9A82-4698C036EC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD62B08-7955-4E57-9A82-4698C036EC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD62B08-7955-4E57-9A82-4698C036EC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD62B08-7955-4E57-9A82-4698C036EC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E88515F0-E185-4DFB-8ABD-B55150CCD03E} = {813CBBAC-C1D7-4377-A153-DF457FB13680}
+		{779E43B9-75E4-4565-A744-A43D1824BB3B} = {813CBBAC-C1D7-4377-A153-DF457FB13680}
+		{6C4A8B4D-99BE-408B-94B7-91635634FD30} = {2CA86341-C51B-4F79-AA93-33C9B87942DD}
+		{CA319D61-C2A9-4943-AC8C-E3DFE21AD2BA} = {14CDC976-FD3D-4DB7-BE5F-7C3707BB0A03}
+		{465AA27F-06D4-4E99-9420-4773373A7471} = {0FEEFEF1-520A-4AE1-B513-146A93CAA34B}
+		{63647324-F478-42ED-BA9A-2111B0561943} = {2CA86341-C51B-4F79-AA93-33C9B87942DD}
+		{B115B98C-2769-4C8B-AE9D-BC46B1600131} = {14CDC976-FD3D-4DB7-BE5F-7C3707BB0A03}
+		{7BD62B08-7955-4E57-9A82-4698C036EC2C} = {0FEEFEF1-520A-4AE1-B513-146A93CAA34B}
 	EndGlobalSection
 EndGlobal

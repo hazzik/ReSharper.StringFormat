@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ReSharper.StringFormat.R90</id>
+    <version>0.4.1</version>
+    <title>ReSharper.StringFormat</title>
+    <authors>Alexander Zaytsev</authors>
+    <owners>Hazzik</owners>
+    <licenseUrl>https://github.com/hazzik/ReSharper.StringFormat/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/hazzik/ReSharper.StringFormat/</projectUrl>
+    <!--<iconUrl></iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Convert PHP-like strings to string.Format form</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2013 Alexander Zaytsev</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Wave" version="[1.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\$Configuration$\ReSharper.StringFormat.*" target="dotFiles\" />
+  </files>
+</package>

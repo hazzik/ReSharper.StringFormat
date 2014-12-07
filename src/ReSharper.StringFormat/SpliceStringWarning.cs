@@ -1,4 +1,6 @@
+using JetBrains.DocumentModel;
 using JetBrains.ReSharper.Daemon;
+using JetBrains.ReSharper.Feature.Services.Daemon;
 using JetBrains.ReSharper.Psi.CSharp;
 using JetBrains.ReSharper.Psi.Tree;
 using ReSharper.StringFormat;
@@ -22,6 +24,11 @@ namespace ReSharper.StringFormat
         public bool IsValid()
         {
             return LiteralExpression != null && LiteralExpression.IsValid();
+        }
+
+        public DocumentRange CalculateRange()
+        {
+            return _element.GetDocumentRange();
         }
 
         public string ToolTip
